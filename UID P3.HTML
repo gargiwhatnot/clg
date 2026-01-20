@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Through the Ages Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #111;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            border-bottom: 3px solid #444;
+            padding-bottom: 0.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 1rem;
+        }
+
+        @media (min-width: 992px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 991px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 599px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        .card img {
+           width: 100%;
+           height: 220px;        
+           object-fit: cover;  
+           display: block;
+        }
+
+        .card p {
+            margin: 0.5rem 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Art Through the Ages</h1>
+    <p>Explore Famous Paintings from Major Art Eras</p>
+</header>
+
+<main>
+    <section id="artnouveau">
+        <h2>Art Nouveau</h2>
+        <div class="gallery">
+            <div class="card"><img src="the kiss.png" alt="Art Nouveau 1"><p>The Kiss</p></div>
+            <div class="card"><img src="artnouveau2.png" alt="Art Nouveau 2"><p>Title</p></div>
+            <div class="card"><img src="artnouveau3.png" alt="Art Nouveau 3"><p>Title</p></div>
+            <div class="card"><img src="artnouveau4.png" alt="Art Nouveau 4"><p>Title</p></div>
+        </div>
+    </section>
+
+    <section id="renaissance">
+        <h2>Renaissance</h2>
+        <div class="gallery">
+            <div class="card"><img src="the last supper.png" alt="The Last Supper" width="219.5px" height="220.16px"><p>The Last Supper</p></div>
+            <div class="card"><img src="the creation of adam.png" alt="The Creation Of Adam" width="219.5px" height="220.16px"><p>The Creation of Adam</p></div>
+            <div class="card"><img src="the birth of venus.png" alt="The Birth of Venus"><p>The Birth of Venus</p></div>
+            <div class="card"><img src="masaccio.png" alt="massaccio"><p>Masaccio</p></div>
+        </div>
+    </section>
+
+    <section id="modern">
+        <h2>Modern Art</h2>
+        <div class="gallery">
+            <div class="card"><img src="modern1.png" alt="Modern 1"><p>Title</p></div>
+            <div class="card"><img src="modern2.png" alt="Modern 2"><p>Title</p></div>
+            <div class="card"><img src="modern3.png" alt="Modern 3"><p>Title</p></div>
+            <div class="card"><img src="modern4.png" alt="Modern 4"><p>Title</p></div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
