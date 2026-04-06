@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WT P5</title>
+    <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+    }
+    .container{
+      display:flex;
+      height:100vh;
+    }
+    .left, .right{
+    width:50%;
+    padding:30px;
+    box-sizing:border-box;
+    overflow:auto;
+    }
+    .left{
+    background-color:#f2f2f2;
+    }
+    .right{
+    background-color:#e3f2fd;
+    }
+    h1{
+    text-align:center;
+    }
+    h2{
+    margin-top:25px;
+    }
+    video, audio{
+    width:100%;
+    margin-top:15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Application Layer</h1>
+            <h2>Information</h2>
+            <p>
+            The Application Layer is the top layer of the OSI model. It allows
+            users to interact with network services through applications such as
+            web browsers, email systems, and file transfer software.
+            </p>
+            <p><b>Common Protocols:</b></p>
+
+            <ul>
+            <li>HTTP – Web communication</li>
+            <li>FTP – File transfer</li>
+            <li>SMTP – Email sending</li>
+            <li>DNS – Domain name translation</li>
+            </ul>
+
+            <h2>Video</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+    </div>
+
+        <div class="right">
+            <h1>Network Layer</h1>
+            <h2>Information</h2>
+            <p>The Network Layer is responsible for routing data packets from
+            source to destination across different networks. It ensures that
+            data takes the most efficient path.
+            </p>
+
+            <p>This layer manages logical addressing and packet forwarding
+            between networks.
+            </p>
+            <p><b>Main Functions:</b></p>
+            <ul>
+                <li>Logical addressing (IP address)</li>
+                <li>Routing data packets</li>
+                <li>Packet forwarding</li>
+                <li>Traffic control</li>
+            </ul>
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+            <div style="text-align: right;">
+                <h4>Made by – GARGI CHAUDHARI</h4>
+                <h5>Roll No. A54</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
